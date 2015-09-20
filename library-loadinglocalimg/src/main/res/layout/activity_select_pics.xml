@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/select_pics_topcontaner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <include layout="@layout/layout_topbar" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <GridView
+            android:id="@+id/select_pics_grid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:horizontalSpacing="3dp"
+            android:listSelector="#00000000"
+            android:numColumns="3"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="3dp" />
+        <!--clickable设置为true 拦截点击事件-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:background="#ee293334"
+            android:clickable="true"
+            android:gravity="left"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/activity_horizontal_margin">
+
+            <Button
+                android:id="@+id/select_pics_bucket"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:text="@string/choose_albums"
+                android:textColor="@drawable/select_bucket"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/select_pics_bucket_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="-5dp"
+                android:src="@drawable/ic_bottom_mark_normal" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

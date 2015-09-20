@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Library-loadingLocalImg</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="choose_albums">我的图片</string>
+</resources>
